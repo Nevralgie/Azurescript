@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+#This is a script to create at least two VM with a load balancer paired with the Azure Mariadb database service
+
 #Variable Pool :
 
 RSG=Brief7Tom
