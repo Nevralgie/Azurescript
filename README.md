@@ -1,6 +1,6 @@
-# Azurescript
+# Azure scripts for Load balanced Azure VMS
 
-Automated azure infrasturcutre deployment scripts.
+Automated azure infrastructure deployment scripts.
 
 The rsg_vmcreate.bash script lets you edit it with your own variables, or use it with defaults values before executing it.
 
