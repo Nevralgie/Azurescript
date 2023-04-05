@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Interactive script to deploy 2 load balanced (public) virtuals machines (Azure IAAS) linked to Azure Mariadb service (SAAS), the user will access them through Azure Bastion.
-# Successfuly tested with azure-cli : 2.46.0
+# Successfuly tested with azure-cli : 2.46.0 5
 echo "*****Deployment starting*****"
 echo "Name of the resource group you wish to create ? (westeurope) : "
 read RSG
