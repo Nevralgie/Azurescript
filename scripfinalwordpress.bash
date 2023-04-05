@@ -18,7 +18,7 @@ sudo mv wp-cli.phar /usr/local/bin/wp
 wp --info
 sudo wp cli update
 # Login to our SAAS mariadb to create a database
-sudo mariadb --user=rooTomadmin@tomdbmaria7 --password=@Azurev69007 --host=tomdbmaria7.mariadb.database.azure.com -e "create $
+sudo mariadb --user=rooTomadmin@tomdbmaria7 --password=@Azurev69007 --host=tomdbmaria7.mariadb.database.azure.com -e "create database wordpresstest;"
 cd /
 cd usr/share/wordpress
 # wp-config.php configuration in relation to our SAAS database
