@@ -7,8 +7,6 @@ sudo apt update && sudo apt install lamp-server^ -y
 curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | sudo bash
 sudo apt-get install mariadb-server mariadb-client -y
 sudo apt install wordpress -y
-chown -R www-data:www-data wordpress/
-chmod -R 755 wordpress/
 sudo service mysql restart
 # wp-cli tool install to interact with wordpress with specific commands
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
