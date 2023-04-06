@@ -221,7 +221,9 @@ echo "Enter your dbadmin name: "
 read DBadmin
 echo "Name your db :"
 read DBname
-echo "Admin DB Password: "
+echo "DB Admin Password (Admin username must be at least 1 characters and at most 16 characters.
+Admin username must only contain characters and numbers.
+Admin login name cannot be 'azure_superuser', 'admin', 'administrator', 'root', 'guest' or 'public') ? : "
 read Adminpsswd
 az mariadb server create \
     --resource-group $RSG \
@@ -232,7 +234,7 @@ az mariadb server create \
     --sku-name GP_Gen5_2 \
     --version 10.2 \
      --ssl-enforcement Disabled 
-
+# One might want to change the value of "--sku-name" according to personnal requirments. Use 'az mariadb server list-skus --location yourlocation' command to show available configurations.
 # To allow your vm to access the db through the NAT gateway, you'll need to add a Mariadb firewall rule with the NATgateway public IP
 
 
