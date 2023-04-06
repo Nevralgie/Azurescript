@@ -239,7 +239,9 @@ echo "Enter your dbadmin name: "
 read DBadmin
 echo "Name your db :"
 read DBname
-echo "Admin DB Password: "
+echo "Admin DB Password (Admin username must be at least 1 characters and at most 16 characters.
+Admin username must only contain characters and numbers.
+Admin login name cannot be 'azure_superuser', 'admin', 'administrator', 'root', 'guest' or 'public') ? : "
 read Adminpsswd
 az mariadb server create \
     --resource-group $RSG \
