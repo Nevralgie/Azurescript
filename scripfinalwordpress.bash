@@ -27,5 +27,5 @@ sudo wp config set DB_NAME wordpresstest --allow-root
 sudo wp config set DB_USER rooTomadmin@tomdbmaria7 --allow-root
 sudo wp config set DB_HOST tomdbmaria7.mariadb.database.azure.com --allow-root
 sudo wp config set DB_PASSWORD @Azurev69007 --allow-root
-sudo ln -s /usr/share/wordpress /var/www/html/wordpress
+sudo cp -R /usr/share/wordpress /var/www/html/wordpress
 sudo chown -R www-data:www-data /var/www/html/wordpress
