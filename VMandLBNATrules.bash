@@ -251,4 +251,5 @@ az mariadb server create \
     --version 10.2 \
     --ssl-enforcement Disabled 
 
-# To allow your vm to access the db through the NAT gateway, you'll need to add a Mariadb firewall rule with the NATgateway public IP
+# One might want to change the value of "--sku-name" according to personnal requirments. Use 'az mariadb server list-skus --location yourlocation' command to show available configurations.
+# To allow your vm to access the db through the NAT gateway, you'll need to add a Mariadb firewall rule configured with the NATgateway public IP
